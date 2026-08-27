@@ -15,5 +15,7 @@ app.onError(({ code, set }) => {
   }
 });
 
+export default app;
+
 app.listen(PORTA)
 console.log(`Server running http://localhost:${PORTA}`);
