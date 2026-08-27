@@ -7,7 +7,7 @@ const app = new Elysia({ adapter: node() }).use(homeRoutes);
 
 app.onError(({ code, set }) => {
   if (code === "NOT_FOUND") {
-    set.status = 403;
+    set.status = 404; // ✅ Mudar para 404 (mais correto)
     return { error: "Página não encontrada", status: set.status };
   }
 });
