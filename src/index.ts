@@ -2,7 +2,7 @@ import { Elysia } from 'elysia'
 import { node } from '@elysia/node'
 import { homeRoutes } from "./router/home.js";
 
-const PORTA: number = Number(process.env.PORT) || 3000
+const PORTA: number = Number(process.env.PORT) || 9090
 const app = new Elysia({ adapter: node() }).use(homeRoutes);
 
 app.onError(({ code, set }) => {
