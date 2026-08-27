@@ -1,6 +1,7 @@
 {
   "name": "qr",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
@@ -16,4 +17,3 @@
     "typescript": "^5.5.4"
   }
 }
-
